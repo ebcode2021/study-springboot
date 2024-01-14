@@ -41,8 +41,8 @@ public class FrontControllerServletV3 extends HttpServlet {
         // paramMap
         Map<String, String> paramMap = createParamMap(request);
         ModelView mv = controller.process(paramMap);
-
         String viewName = mv.getViewName(); // 논리 이름 new-form
+
         MyView view = viewResolver(viewName);
         view.render(mv.getModel(), request, response);
     }

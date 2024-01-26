@@ -12,7 +12,7 @@ import java.util.Map;
  * 마찬가지로 long -> AtomicLong
  */
 @Repository
-public class itemRepository {
+public class ItemRepository {
     private static final Map<Long, Item> store = new HashMap<>(); // static 사용!
     private static long sequence = 0L;
 
